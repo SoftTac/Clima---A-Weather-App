@@ -27,7 +27,7 @@ A Weather API key (e.g. OpenWeatherMap)
 
 Running the App
 
-Clone the repository: git clone https://github.com/your-username/clima.git
+Clone the repository: git clone https://github.com/SoftTac/Clima---A-Weather-App
 
 Open the project in your preferred IDE (e.g. Android Studio, Visual Studio Code)
 Replace the YOUR_API_KEY placeholder in lib/services/weather.dart with your actual Weather API key
