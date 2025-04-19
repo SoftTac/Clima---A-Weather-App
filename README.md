@@ -1,72 +1,101 @@
-Clima: A Weather App
+# 🌦️ Clima - Weather App
 
-About
+<div align="center">
+  <img src="https://github.com/SoftTac/Clima---A-Weather-App/raw/main/assets/images/app_icon.png" width="150" alt="Clima Logo">
+  <h1>Real-Time Weather Forecasts</h1>
+  
+  ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+  ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+  ![MIT License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
+</div>
 
-Clima is a fully functional weather app built with Flutter, providing real-time weather information for any location worldwide. This app is designed to be user-friendly, with a clean and intuitive interface for users to easily access current weather conditions, temperature, and weather forecasts.
+## 📱 App Screenshots
 
-Features
+<div align="center">
+  <img src="https://github.com/SoftTac/Clima---A-Weather-App/raw/main/screenshots/home_screen.png" width="30%" alt="Home Screen">
+  <img src="https://github.com/SoftTac/Clima---A-Weather-App/raw/main/screenshots/search_screen.png" width="30%" alt="Search Screen"> 
+  <img src="https://github.com/SoftTac/Clima---A-Weather-App/raw/main/screenshots/location_screen.png" width="30%" alt="Location Screen">
+</div>
 
-Get current weather conditions, including temperature, humidity, and wind speed
-Search for weather forecasts by city or location
-View weather data in a clean and intuitive interface
-Switch between Celsius and Fahrenheit units
-Get weather updates for your current location using GPS
+## ✨ Features
 
-Technologies Used
+- 🌡️ Real-time temperature and weather conditions
+- 🌍 Search weather by city name
+- 📍 Automatic location detection via GPS
+- 🔄 Unit conversion (Celsius/Fahrenheit)
+- 🌤️ 5-day weather forecast
+- 🎨 Sleek Material Design UI
 
-Flutter (Dart programming language)
-Weather API for fetching weather data
-Material Design for a visually appealing UI
+## 🛠️ Technologies Used
 
-Getting Started
+| Category        | Technologies                          |
+|-----------------|---------------------------------------|
+| Framework       | Flutter                              |
+| Language        | Dart                                 |
+| API             | OpenWeatherMap                       |
+| State Management| Provider                             |
+| Networking      | http package                         |
+| Location        | geolocator package                   |
 
-Prerequisites
+## 🚀 Getting Started
 
-Flutter installed on your machine
-A Weather API key (e.g. OpenWeatherMap)
+### Prerequisites
+- Flutter SDK (>=3.0.0)
+- Android Studio/VSCode with Flutter plugin
+- OpenWeatherMap API key
 
-Running the App
+### Installation
+1. Clone the repository
+   ```bash
+   git clone https://github.com/SoftTac/Clima---A-Weather-App.git
+   cd Clima---A-Weather-App
+   ```
 
-Clone the repository: git clone https://github.com/SoftTac/Clima---A-Weather-App
+2. Add your API key
+   ```dart
+   // Replace in lib/services/weather.dart
+   const String apiKey = 'YOUR_API_KEY';
+   ```
 
-Open the project in your preferred IDE (e.g. Android Studio, Visual Studio Code)
-Replace the YOUR_API_KEY placeholder in lib/services/weather.dart with your actual Weather API key
-Run the app on an emulator or physical device: flutter run
+3. Install dependencies & run
+   ```bash
+   flutter pub get
+   flutter run
+   ```
 
-Contributing
+## 🏗️ Project Structure
 
-Contributions are welcome! If you'd like to contribute to Clima, please fork the repository and submit a pull request.
+```
+lib/
+├── main.dart          # App entry point
+├── models/           # Data models
+├── services/         # API services
+├── widgets/          # Reusable components
+├── screens/          # App screens
+└── utils/            # Helper functions
+```
 
-License
+## 🤝 Contributing
 
-Clima is licensed under the MIT License. See LICENSE for details.
+We welcome contributions! Please follow these steps:
 
-Author
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-[Ahmad Khalil]
+## 📜 License
 
-Acknowledgments
+Distributed under the MIT License. See `LICENSE` for more information.
 
-[Weather API provider] for providing the weather data
-[Flutter community] for their support and resources
+## 📬 Contact
 
-Changelog
+**Ahmad Khalil Khattak**  
+[![Email](https://img.shields.io/badge/Email-ahmadkhanpakistan987@gmail.com-D14836?style=flat&logo=gmail)](mailto:ahmadkhanpakistan987@gmail.com)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ahmad_Khalil-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/ahmad-khalil-33bbb4283/)
 
-v1.0.0
-Initial release of Clima
+---
 
-v1.1.0
-Added support for Celsius and Fahrenheit units
-Improved UI design and layout
-
-v1.2.0
-Fixed bug with GPS location updates
-Added error handling for API requests
-
-TODO
-
-Integrate more weather APIs for more accurate data
-Add push notifications for weather alerts
-Implement a favorites system for frequently visited locations
-
-Feel free to try out Clima and let me know what you think!
+> "Stay ahead of the weather with Clima - your pocket meteorologist!"  
+> Developed with ❤️ using Flutter
